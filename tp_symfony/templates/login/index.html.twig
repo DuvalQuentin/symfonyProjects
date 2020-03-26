@@ -1,0 +1,16 @@
+{% extends 'navbar.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <section>
+            <h1 class="display-4">login</h1>
+            <article>
+                {{ form_start(formLogin) }}
+                {{ form_end(formLogin) }}
+            </article>
+        </section>
+    </div>
+{% endblock %}
