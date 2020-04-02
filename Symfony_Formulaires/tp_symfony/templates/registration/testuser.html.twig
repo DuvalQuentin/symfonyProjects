@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Employe{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_row(form.nom) }}
+    {{ form_row(form.prenom) }}
+    {{ form_row(form.mail) }}
+    {{ form_row(form.password) }}
+    {{ form_end(form) }}
+{% endblock %}
